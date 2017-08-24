@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% if (flag) { %>
+      <h1><%= title %> in if</h1>
+      <p>Welcome to <%= title %></p>
+    <% } else { %>
+      <h1><%= title %> in else </h1>
+      <p>Welcome to <%= title %></p>    
+    <% } %>
+
+    <%# this is comment tag %>
+
+    <%- include('ejs_included_sample'); %>
+
+    <a href='http://ejs.co/'>http://ejs.co/</a>
+  </body>
+</html>
